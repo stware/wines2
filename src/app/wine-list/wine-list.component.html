@@ -1,3 +1,14 @@
-<p>
-wine-list works!
-</p>
+<table *ngIf="wines.length > 0" class="table table-striped mt-4">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let wine of wines">
+      <td>{{ wine.name }}</td>
+      <td>{{ wine.type }}</td>
+    </tr>
+  </tbody>
+</table>
