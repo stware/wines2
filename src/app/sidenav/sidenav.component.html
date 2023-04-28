@@ -1,0 +1,16 @@
+<mat-sidenav-container [class.m2app-dark]="isDarkTheme">
+  <mat-sidenav #sidenav mode="over" class="app-sidenav" color="primary">
+  </mat-sidenav>
+  <mat-toolbar color="primary">
+    <button mat-button class="app-menu-button" (click)="sidenav.toggle()">
+      <i class="material-icons">menu</i>
+    </button>
+    <span class="title">Wines</span>
+  </mat-toolbar>
+  <div class="app-content">
+    <div>
+      <p>app works!aaaaaaaaaaaaaaaa</p>
+    </div>
+    <app-wine-list></app-wine-list>
+  </div>
+</mat-sidenav-container>

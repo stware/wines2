@@ -1,0 +1,8 @@
+mat-sidenav-container.m2app-dark {
+  background: black;
+}
+
+.app-menu-button {
+  padding: 0;
+  min-width: 50px;
+}
