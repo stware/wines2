@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "empleados": {
+    "wines": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/empleados",
+            "outputPath": "public",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -32,7 +32,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "empleados:build:production"
+              "browserTarget": "wines:build:production"
             },
             "development": {
-              "browserTarget": "empleados:build:development"
+              "browserTarget": "wines:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "empleados:build"
+            "browserTarget": "wines:build"
           }
         },
         "test": {
@@ -94,13 +94,13 @@
           "options": {
             "prerender": false,
             "ssr": false,
-            "browserTarget": "empleados:build:production",
-            "firebaseProject": "empleados-ec79e",
-            "firebaseHostingSite": "empleados-ec79e"
+            "browserTarget": "wines:build:production",
+            "firebaseProject": "wines-12389",
+            "firebaseHostingSite": "wines-12389"
           }
         }
       }
     }
   },
-  "defaultProject": "empleados"
+  "defaultProject": "wines"
 }
