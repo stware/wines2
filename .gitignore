@@ -8,6 +8,7 @@ firebase-debug.log*
 firebase-debug.*.log*
 package-lock.json
 .angular
+public
 
 # Firebase cache
 .firebase/
