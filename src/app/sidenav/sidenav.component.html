@@ -5,9 +5,15 @@
     <button mat-button class="app-menu-button" (click)="sidenav.toggle()">
       <i class="material-icons">menu</i>
     </button>
-    <span class="title">Wines</span>
+    <a
+      routerLink="/wine-list"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+    >
+      <span class="title">Wines</span>
+    </a>
   </mat-toolbar>
   <div class="app-content">
-    <app-wine-list></app-wine-list>
+    <router-outlet></router-outlet>
   </div>
 </mat-sidenav-container>

@@ -15,9 +15,15 @@ import { ToastrModule } from 'ngx-toastr';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { AngularMaterialModule } from '../angular-material/angular-material.module';
 import { WineListComponent } from './wine-list/wine-list.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, SidenavComponent, WineListComponent],
+  declarations: [
+    AppComponent,
+    SidenavComponent,
+    WineListComponent,
+    DashboardComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
